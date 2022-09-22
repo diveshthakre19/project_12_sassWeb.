@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  color: #0199ff;
+}
+
+body {
+  background-color: #f1f1f1;
+  color: rgb(8, 8, 8);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* ------------------------------ */
+/* ---------- HERO ------------ */
+/* ------------------------------ */
+
+section {
+  padding: 6rem 0;
+}
+
+.main {
+  background-color: #7613e7;
+  padding: 2rem 4rem;
+
+  min-height: 100vh;
+}
+
+header img {
+  height: 2.5rem;
+}
+
+header {
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list-items {
+  margin-right: 2rem;
+}
+
+.logo {
+  flex-grow: 2;
+}
+
+.hero-section {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 3rem;
+}
+
+.left-sec {
+  flex-direction: column;
+  align-items: flex-start;
+  display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  color: #ffffff;
+  background-color: #0199ff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.3rem;
+  border: none;
+}
+
+.section-2 {
+  margin: 6rem 0;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #ffffff;
+}
+
+p {
+  font-size: 0.8rem;
+  color: aliceblue;
+}
+
+.image-sec img {
+  height: 30rem;
+}
+
+h3 img {
+  height: 1rem;
+  margin-right: 0.5rem;
+}
+.aling-center {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.data {
+  margin-left: 2rem;
+  color: #1e1e1ec2;
+}
+/* * ------------------------------  */
+/* ---------- CARD-SECTION------------ */
+/* ------------------------------ */
+
+.card-section {
+  display: grid;
+  margin: 1rem 5rem;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.card {
+  gap: 2rem;
+  margin: 0.5rem;
+  display: flex;
+  align-items: center;
+  border-radius: 0.5rem;
+  flex-direction: column;
+  border-radius: 0rem 2rem;
+  box-shadow: 2px 2px 8px -3px;
+  background-color: #ffffff;
+}
+
+.card-top,
+.card-bottom {
+  padding: 1rem 0.5rem;
+}
+
+.round {
+  width: 7rem;
+  height: 7rem;
+  display: flex;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  background-color: #e28c8c61;
+}
+
+.round img {
+  height: 3.5rem;
+}
+
+.round-2 {
+  background-color: #ffff005d;
+}
+
+.round-3 {
+  background-color: #acff2f8c;
+}
+
+.round-4 {
+  background-color: #980cf570;
+}
+
+.card-data {
+  font-size: 0.6rem;
+  color: #1e1e1e70;
+  line-height: 1.1rem;
+  font-weight: 800;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+.active {
+  background-color: #7613e7;
+  color: #ffffff;
+  width: 100%;
+  border-radius: 0rem 2rem;
+}
+
+.active p {
+  color: #ffffff;
+}
+
+h4 {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+/* ------------------------------ */
+/* ---------- RESPONSIVE CODE------------ */
+/* ------------------------------ */
+
+@media screen and (min-width: 1100px) {
+  html {
+    font-size: 120%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  html {
+    font-size: 130%;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  html {
+    font-size: 140%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 70%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero-section {
+    flex-direction: column-reverse;
+  }
+
+  html {
+    font-size: 100%;
+  }
+  .section-2 {
+    flex-direction: column;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .image-sec img {
+    height: 22rem;
+  }
+  .list {
+    display: none;
+  }
+  .main {
+    padding: 2rem 1.2rem;
+  }
+  .card-section {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
